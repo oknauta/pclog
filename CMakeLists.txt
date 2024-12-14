@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.25.0)
 
-project(pclog LANGUAGES CXX)
+project(pclog VERSION 0.1.1 LANGUAGES CXX)
 
 add_library(pclog SHARED source/pclog/pclog.cpp)
 
@@ -16,15 +16,15 @@ install(DIRECTORY ${CMAKE_SOURCE_DIR}/include/
 )
 
 set(CPACK_GENERATOR "DEB")
-set(CPACK_PACKAGE_NAME "pclog")
-set(CPACK_PACKAGE_VERSION "0.1.0")
+set(CPACK_PACKAGE_NAME ${PROJECT_NAME})
+set(CPACK_PACKAGE_VERSION ${PROJECT_VERSION})
 set(CPACK_PACKAGE_VENDOR "oknauta")
 set(CPACK_PACKAGE_HOMEPAGE_URL "https://github.com/prescriptioncodes/pclog")
 set(CPACK_PACKAGE_DESCRIPTION "A library to logging for C++ with namespace")
 set(CPACK_PACKAGE_CONTACT "oknauta@proton.me")
 set(CPACK_DEBIAN_PACKAGE_MAINTAINER "oknauta <oknauta@proton.me>")
 set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE "amd64")
-set(CPACK_PACKAGE_LICENSE "mit")
+set(CPACK_PACKAGE_LICENSE "MIT license")
 
 include(CPack)
 
