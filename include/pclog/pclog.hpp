@@ -1,5 +1,5 @@
 // Author: oknauta
-// License:
+// License: MIT
 // File: pclog.hpp
 // Date: 2024-12-12
 
@@ -8,9 +8,9 @@
 
 namespace PCLOG
 {
-    void info(const char *description);
-    void warning(const char *description);
-    void error(const char *description);
+    void info(const char *description, ...);
+    void warning(const char *description, ...);
+    void error(const char *description, ...);
 } // namespace PCLOG
 
 #endif // PCLOG_HPP

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.25.0)
 
-project(pclog VERSION 0.1.1 LANGUAGES CXX)
+project(pclog VERSION 0.2.0 LANGUAGES CXX)
 
 add_library(pclog SHARED source/pclog/pclog.cpp)
 
